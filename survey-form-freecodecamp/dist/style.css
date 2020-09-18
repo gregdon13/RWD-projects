@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Basic', serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+body::before {
+  content:'';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ), url(https://i.imgur.com/fZ0LFeM.jpg);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+input,
+button,
+textarea {
+  margin: 5;
+  font-family: inherit;
+  font-size: 1.25rem;
+}
+select {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.25rem;
+}
+button {
+  border: none;
+}
+.container {
+  width: 50%;
+  margin:  3.125rem auto 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+#form-group {
+  margin-bottom: .75rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+}
+#favorite-song,
+#merch{
+  font-size: 1.2rem;
+  padding-left: 2%;
+}
+.input-textarea {
+  min-height: 50px;
+  width: 100%;
+  padding: 0 .5rem;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: var(--color-green);
+  color: white;
+  padding: .5rem;
+}

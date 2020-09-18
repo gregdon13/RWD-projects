@@ -1,0 +1,84 @@
+html {
+  font-size: 10px;
+}
+#main {
+  margin: 10px 5px;
+  padding: 15px;
+  border-radius: 5px;
+  background: url(https://cdn.newswire.com/files/x/84/9d/323e432996ee627f05a9a93d9e20.jpg);
+  background-size: auto;
+}
+header {
+  background-color: #FFF;
+  font-size: 3rem;
+  box-shadow: 0 5px 5px;
+}
+body {
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  font-size: 5rem;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#img-caption {
+  font-size: 1.5rem;
+  text-align: left;
+}
+h2 {
+  font-size: 3rem;
+  font-family: Merriweather;
+  padding: 0.5em;
+}
+ul {
+  max-width: 550px;
+  margin: 0 auto 25px auto;
+  list-style-position: inside;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 2.5rem;
+  padding: 0 0 0 30%;
+}
+footer {
+  font-size: 2rem;
+  background-color: white;
+  width: 40%;
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+#logo {
+  max-width: 80%;
+  height: 10%;
+  margin: 0 auto;
+}
+#subtitle {
+  font-family: Architects Daughter;
+}
+a {
+  padding: auto;
+  margin: auto;
+}
+a:visited {
+  color: #74638f;
+}
+a:hover {
+  color: red;
+}
+.cursive {
+  font-family: Bad Script;
+  font-weight: 500;
+}
+#tribute-info {
+  box-shadow: 0 5px 5px;
+  width: 60%;
+  background-color: white;
+  margin: auto;
+  padding: 0 0 0.5em 0;
+}

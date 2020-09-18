@@ -1,0 +1,136 @@
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Fan Survey</h1>
+    <p id="description" class="description text-center">I wanna know who you are and what you want</p>
+  </header>
+  
+  <form id="survey-form">
+    <div id="form-group">
+      <label id="name-label">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required>
+    </div>
+    
+    <div id="form-group">
+      <label id="email-label">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required>
+    </div>
+    
+    <div id="form-group">
+      <label id="number-label">Age <span class="clue">(optional)</span></label>
+        <input
+               type="number"
+               name="age"
+               id="number"
+               min="10"
+               max="99"
+               class="form-control"
+               placeholder="Age">
+    </div>
+      
+    <div id="form-group">
+      <p>How did you first hear about me?</p>
+      <select id="dropdown" name="introduction" class="form-control" required>
+        <option value="streaming" required>Streaming service</option>
+        <option value="social-media">Social Media</option>
+        <option value="friend">Friend or Family Member</option>
+        <option value="random">Just sorta randomly</option>
+      </select>
+    </div>
+      
+    <div id="form-group">
+      <p>Which song is your favorite so far?</p>
+      <label id="favorite-song">
+        <input
+               name="favorite-song"
+               type='radio'
+               value="Pour Me Some Tea"
+               class="input-radio"
+               checked>
+        Pour Me Some Tea
+      </label>
+      <label id="favorite-song">
+        <input
+               name="favorite-song"
+               type="radio"
+               value="You're Gonna Love Me remix"
+               class="input-radio">
+        You're Gonna Love Me remix
+      </label>
+      <label id="favorite-song">
+        <input
+               name="favorite-song"
+               type="radio"
+               value="Airport Busking"
+               class="input-radio">
+        Airport Busking
+      </label>
+      <label id="favorite-song">
+        <input
+               name="favorite-song"
+               type="radio"
+               value="Mumble in the Jungle"
+               class="input-radio">
+        Mumble in the Jungle
+      </label>
+    </div>
+    <div id="form-group">
+      <p>What kind of merch would you like to see?</p>
+      <label id="merch">
+        <input
+               type="checkbox"
+               name="merch-options"
+               value="hat"
+               class="input-checkbox">
+        Hat
+      </label>
+      <label id="merch">
+        <input
+               type="checkbox"
+               name="merch-options"
+               value="stickers"
+               class="input-checkbox">
+        Stickers
+      </label>
+      <label id="merch">
+        <input
+               type="checkbox"
+               name="merch-options"
+               value="bandana"
+               class="input-checkbox">
+        Bandana
+      </label>
+      <label id="merch">
+        <input
+               type="checkbox"
+               name="merch-options"
+               value="shirt"
+               class="input-checkbox">
+        Shirts
+      </label>
+    </div>
+    <div id="form-group">
+      <p>Anything else you want to say to me?</p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment-section"
+                placeholder="Peace and love"></textarea>
+    </div>
+    <div id="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>

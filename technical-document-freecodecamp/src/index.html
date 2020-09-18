@@ -1,0 +1,92 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Nunito+Sans&display=swap');
+</style>
+<nav id="navbar">
+  <header>CSS Knowledge</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a></li>
+    <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+    <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+    <li><a class="nav-link" href="#Interacting_with_HTML">Interacting with HTML</a></li>
+    <li><a class="nav-link" href="#Size_of_an_Element">Size of an Element</a></li>
+    <li><a class="nav-link" href="#Text_Properties">Text Properties</a></li>
+    <li><a class="nav-link" href="#Responsive_Web_Design">Responsive Web Design</a></li>
+    <li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
+   </li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction_to_CSS">
+    <header>Introduction to CSS</header>
+    <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets and it is a web developing language that describes how information and elements from HTML should be displayed on a screen, paper, or other media. It was created by the World Wide Web Consortium to solve a problem. As websites grew, so did the need for formatting them. Before CSS, it was all within HTML, and was becoming a nightmare for coders. Thus, CSS was born to only have to change one element for all pages, instead of each one individually.</p>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <p>Before really working with CSS, you should really know the following:</p>
+    <ul>
+      <li>Comfortable knowledge of HTML</li>
+      <li>A general understanding of coding</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Syntax">
+    <header>Syntax</header>
+    <p>The first thing to discuss with CSS is its basic syntax. You have two main parts: the selector and the declaration. An example of a basic line in CSS is seen below:</p>
+    <code> h1 {color: blue; font-size: 10px}</code>
+    <p>In this example, the <code>h1</code> is the selector. You should recognize this piece of code from HTML. So this is saying that we are going to affect all elements labeled with the Header 1 tag in HTML.</p>
+    <p>The parts within the squiggle brackets are the declarations, separated by a semicolon. So the entire line of <code>color: blue</code> is a declaration, which is made up of two parts. <code>color:</code> is the property of <code>h1</code> that we are going to change. <code>blue</code> is the value of the property we are changing. Thus, all things labeled <code>h1</code> in our HTML will be colored blue.</p>
+    <p>We also have a second declaration within the same set of squiggle brackets. As said before, we always separate our declarations with a semicolon. By doing this, we can tell CSS that we want to do multiple things to our <code>h1</code> element. So in addition to coloring it blue, we are also making it so that our property of <code>font-size:</code> is going to be <code>10px</code> big.</p>
+  </section>
+  <section class="main-section" id="Interacting_with_HTML">
+    <header>Interacting with HTML</header>
+    <p>In addition to our selectors being based on elements that already exist in HTML, we can also specify if we only want certain instances of those elements to be affected. We do this by assigning an <code>id</code> or a <code>class</code> to our elements within our HTML document. Then we are able to affect our elements with just that <code>id</code> or ones with just that <code>class</code>. We affect them a little differently than we do our HTML elements.</p>
+    <ul>
+      <li>For affecting something with a specific <code>id</code> we need to start our selector with a #. Ex: <code>#main-header {}</code></li>
+      <li>For affecting a group of elements all assigned to the same <code>class</code> we have to begin our selector with a period "." Ex: <code>.body-headers {}</code></li>
+    </ul>
+  </section>
+  <section class="main-section" id="Size_of_an_Element">
+    <header>Size of an Element</header>
+    <p>Before we can talk about the properties we can use to change the size of an element, we should first talk about the different units of measurement and size that can be used.</p>
+    <p class="paragraph-header"><b>Absolute Units</b>
+    <ul>
+      <li>Most are self explanatory such as <code>in</code>, <code>cm</code>, and <code>mm</code>. But others, not so much, such as the following.</li>
+      <li><code>pt</code> - points. A point is 1/72 of an inch.</li>
+      <li><code>px</code> - pixels. A pixel is .75pt
+    </ul>
+    </p>
+  <p class="paragraph-header"><b>Relative Units</b> (All based on sizes of something else)
+    <ul>
+      <li><code>em</code> - relative to the size of the current font (<code>2em</code> is 2 times the current size of the font)</li>
+      <li><code>rem</code> - relative to the font size of the root element</li>
+      <li><code>%</code> - relative to the parent element</li>
+      <li><code>vm</code> - relative to 1% of the width of the viewport*</li>
+      <li><code>vh</code> - relative to 1% of the height of the viewport*</li>
+  </ul>
+  </p>
+<p id="explanation">*a viewport is the browser window size. If viewport is 50cm wide, 1vw = 0.5cm</p>
+  </section>
+  <section class="main-section" id="Text_Properties">
+    <header>Text Properties</header>
+    <p>There are all sorts of ways that we can change and affect text within our page, ranging from coloring to size and placement, to the font. Most are pretty self explanatory, it's just remembering the exact vocabulary. All the new vocabulary that will be introduced, will all be different property values of the declaration side of the syntax.</p>
+    <p>First, let's talk something most people know about from experience with something like Microsoft Word. Let's talk font size and the type of font.</p>
+    <ul>
+      <li><code>font-family:</code> - this is how to tell CSS which family of fonts you want used for a text. These families are serif, sans serif, and monospace. You can also specify a more particular font within the values, assuming it is a widely known font such as Arial or Times New Roman etc.</li>
+      <li><code>font-size:</code> - as it says, this how we change the size of the font, using the types of units that we had discussed in our previous section <a id="sectionjump" href="#Size_of_an_Element">Size of an Element</a></li>
+    </ul>
+  </section>
+  <section class="main-section" id="Responsive_Web_Design">
+    <header>Responsive Web Design</header>
+    <p>Today, there are many types of devices that can access the web. They range from large desktop computers to small mobile phones. These devices have different screen sizes, resolutions, and processing power. Responsive Web Design is an approach to designing web content that responds to the constraints of different devices. The page structure and CSS rules should be flexible to accommodate these differences. In general, design the page's CSS to your target audience. If you expect most of your traffic to be from mobile users, take a 'mobile-first' approach. Then add conditional rules for larger screen sizes. If your visitors are desktop users, then design for larger screens with conditional rules for smaller sizes. CSS gives you the tools to write different style rules, then apply them depending on the device displaying the page.</p>
+    <p>Now the most common way to make elements of your page responsive is with a media query. An example of this can be seen below.</p>
+    <code>@media (max-width: 200px) {p {font-size: 10px}}</code>
+    <p>In this example, it is saying that when the viewport is 200 pixels wide OR LESS, then the font size will be changed to 10 pixels. So if the original font size of <code>p</code> elements were 20 pixels, then on a screen of 200 pixels wide, it would cut the font size in half.</p>
+  </section>
+  <section class="main-section" id="Flexbox">
+    <header>Flexbox</header>
+    <p class="paragraph-header"><b>What in the world is a flexbox???</b></p>
+    <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow. All while not needing to know the exact size of the elements within it.</p>
+    <p class="paragraph-header"><b>How do we use it?</b></p>
+    <p>An entire document could be dedicated to using a flexbox, so this is simply to scratch the surface and set it up. In order to make it so an item is a flexbox, we must use <code>display: flex;</code>
+      <p>To see all the ways that a flexbox can be used and all of the orientations that exist for it, go check out this awesome <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">cheat sheet</a>
+  </section>
+</main>
